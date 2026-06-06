@@ -1,1 +1,73 @@
-<h1>Welcome!<h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdi 的个人博客</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Abdi's Blog</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">首页</a></li>
+                    <li><a href="#posts" class="nav-link">文章</a></li>
+                    <li><a href="#about" class="nav-link">关于</a></li>
+                    <li><a href="#contact" class="nav-link">联系</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>欢迎来到我的博客</h1>
+                <p>分享技术、思考和生活的点滴</p>
+                <button class="btn" onclick="document.getElementById('posts').scrollIntoView({behavior: 'smooth'})">开始阅读</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="posts" class="posts">
+        <div class="container">
+            <h2 class="section-title">最新文章</h2>
+            <div class="posts-grid" id="postsContainer"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <p>你好！我是Abdi，一个充满热情的开发者和技术爱好者。我喜欢分享我在编程、技术和生活中的学习和思考。</p>
+                <p>在这个博客上，你会找到关于Web开发、编程技巧和个人想法的文章。希望这些内容能对你有所帮助！</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <p>欢迎通过以下方式与我联系：</p>
+                <div class="contact-links">
+                    <a href="https://github.com/Abdi-6666666" class="contact-link">GitHub</a>
+                    <a href="mailto:your-email@example.com" class="contact-link">Email</a>
+                    <a href="https://twitter.com/" class="contact-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Abdi 的博客. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
